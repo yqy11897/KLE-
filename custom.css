@@ -1,0 +1,224 @@
+/* KLE content refinements */
+.brand-copy small{font-size:12px;letter-spacing:.02em;font-weight:500}
+html:lang(zh) .brand-copy{width:max-content;align-items:stretch}
+html:lang(zh) .brand-copy strong{letter-spacing:.06em;text-align:justify;text-align-last:justify}
+html[lang="en"] .brand-copy strong{font-family:Arial,"Noto Sans",sans-serif;font-style:normal;font-weight:600;letter-spacing:0}
+.search input:focus,.search input:focus-visible,.search:focus-within{outline:none!important;box-shadow:none!important}
+.search input{appearance:none;-webkit-appearance:none}
+.hero-bottom>div:first-child{max-width:1100px}
+.hero-bottom h1:has(.slogan-pair){display:flex;align-items:flex-start;justify-content:flex-start;gap:clamp(12px,1.3vw,22px);margin:0!important}
+.hero-bottom .slogan-pair{display:flex;flex-direction:column;align-items:stretch;white-space:nowrap}
+.hero-bottom .slogan-zh{display:block;font-family:"KaiTi","STKaiti","Kaiti SC",serif;font-size:clamp(30px,2.8vw,46px);font-weight:900;-webkit-text-stroke:.35px currentColor;letter-spacing:.08em;line-height:1.45;color:var(--blue)}
+.hero-bottom .home-slogan-en{display:block;font-family:"Comic Sans MS","Trebuchet MS",cursive!important;font-size:clamp(22px,1.9vw,30px)!important;font-weight:400!important;letter-spacing:.01em!important;color:var(--blue)!important;line-height:1.35!important;margin:0!important}
+html[lang="en"] .hero-bottom h1{color:var(--blue)}
+.article.culture-content>h2{text-align:center;margin-left:0}
+.hero-bottom .home-slogan-en{text-align:left;text-align-last:auto;word-spacing:normal}
+.hero-bottom .slogan-pair{gap:3px}
+@media(max-width:900px){.hero-bottom h1:has(.slogan-pair){flex-wrap:wrap;gap:10px 24px}}
+@media(max-width:700px){.hero-bottom h1:has(.slogan-pair){display:block}.hero-bottom .slogan-pair+.slogan-pair{margin-top:12px}.hero-bottom .slogan-zh{font-size:clamp(24px,5.2vw,33px)}.hero-bottom .home-slogan-en{font-size:clamp(20px,4.4vw,27px)!important}}
+.article .slogan{margin-bottom:0!important;font-weight:700}
+.article p.slogan-translation{font-weight:400!important;font-family:"Comic Sans MS","Trebuchet MS",cursive;color:var(--blue)!important;font-size:20px;line-height:1.4;margin:4px 0 25px!important;border-left:3px solid var(--blue);padding-left:22px}
+.trademark-section{background:#f7f9fc}
+.trademark-grid{display:grid;grid-template-columns:1fr 1fr;gap:32px;margin-top:36px}
+.trademark-mark,.trademark-proof{background:#fff;border:1px solid #dfe5ef;padding:30px;text-align:center;min-height:290px;display:flex;flex-direction:column;justify-content:center;align-items:center}
+.trademark-mark img{width:min(280px,80%);height:auto;object-fit:contain;background:#022fdd}
+.trademark-mark p,.trademark-proof p{color:#64728b;font-size:14px;margin:18px 0 0}
+.trademark-placeholder{width:100%;min-height:190px;display:grid;place-items:center;border:1px dashed #b9c7df;color:#526988;background:#f6f8fc;padding:30px}
+.certificate-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:30px;margin-top:34px}
+.certificate-card{display:flex;flex-direction:column;align-items:center;gap:17px;background:#fff;border:1px solid #dfe5ef;padding:24px;color:#1c2b47;text-align:center}
+.certificate-card img{display:block;width:100%;height:330px;object-fit:contain}
+.certificate-card span{font-size:16px}
+.footer-grid{grid-template-columns:1.2fr .8fr .8fr 1.3fr}
+.footer-grid>div:first-child{text-align:center;display:flex;flex-direction:column;align-items:center}
+.footer-grid>div:first-child h3{font-size:22px;line-height:1.35;margin-bottom:14px}
+.footer-grid>div:first-child p{font-size:15px;margin:0}
+.footer-official-qr{margin:22px 0 0;text-align:center}
+.footer-official-qr img{display:block;width:135px;height:135px;background:white;padding:5px;object-fit:contain}
+.footer-official-qr figcaption{font-size:12px;color:#d6e0ff;margin-top:9px}
+.contacts{display:flex;flex-direction:column;gap:42px}
+.contacts>div:first-child{width:100%}
+.contacts .company-map{width:min(100%,1000px);margin:0 auto}
+.contacts .company-map img{width:100%;max-height:410px;object-fit:cover}
+.contact-cards{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin-top:32px}
+.contact-card{background:#022fdd;color:white;text-align:center;min-height:185px;padding:25px 18px;display:flex;flex-direction:column;justify-content:center;align-items:center}
+.contact-icon{font-size:32px;line-height:1;height:30px;display:grid;place-items:center;margin-bottom:16px}
+.contact-icon-img{display:block;width:30px;height:30px;object-fit:contain;filter:brightness(0) invert(1);margin-bottom:16px}
+.contact-card:nth-child(2) .contact-icon-img{transform:scale(.85)}
+.contact-card:nth-child(4) .contact-icon-img{transform:scale(1.45)}
+.contact-card h3{font-size:18px;font-weight:500;margin:0 0 10px}
+.contact-card p{font-size:14px;line-height:1.55;margin:0;overflow-wrap:anywhere}
+.contact-card a{color:inherit;text-decoration:underline;text-underline-offset:3px}
+@media(max-width:850px){.contact-cards{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:900px){.certificate-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:700px){.trademark-grid{grid-template-columns:1fr}.footer-grid{grid-template-columns:1fr 1fr}.home-slogan-en{font-size:17px!important}}
+@media(max-width:700px){.certificate-grid{grid-template-columns:1fr}.certificate-card img{height:280px}}
+@media(max-width:500px){.contact-cards{grid-template-columns:1fr 1fr;gap:10px}.contact-card{padding:18px 10px;min-height:165px}.contact-card p{font-size:12px}}
+
+/* Soften the source photo boundary on the pale catalog cards without obscuring the products. */
+.product-card-image img[src*="5587dbab5157e2"],.product-card-image img[src*="ed6a22f525d1db"],.product-card-image img[src*="8974ff6d28f0c4"],.product-card-image img[src*="a6f07aeb08b69b"],.product-card-image img[src*="d4347dc930a3b1"],.product-card-image img[src*="5a7061b6e04ff0"],.product-card-image img[src*="20b5976d387a43"]{-webkit-mask-image:linear-gradient(to right,transparent 0%,#000 12%,#000 88%,transparent 100%),linear-gradient(to bottom,transparent 0%,#000 12%,#000 88%,transparent 100%);mask-image:linear-gradient(to right,transparent 0%,#000 12%,#000 88%,transparent 100%),linear-gradient(to bottom,transparent 0%,#000 12%,#000 88%,transparent 100%);-webkit-mask-composite:source-in;mask-composite:intersect}
+.product-card-image img[src*="d4347dc930a3b1"],.product-card-image img[src*="5a7061b6e04ff0"],.product-card-image img[src*="20b5976d387a43"]{-webkit-mask-image:radial-gradient(ellipse 70% 70% at 50% 50%,#000 45%,transparent 78%);mask-image:radial-gradient(ellipse 70% 70% at 50% 50%,#000 45%,transparent 78%)}
+.content .grid:not(.list-layout) .card[data-category="sketchbook"] .product-card-image img[src*="a4-sketchbook-clean"]{-webkit-mask-image:none;mask-image:none;mix-blend-mode:normal}
+
+/* Lift the off-white studio backdrop to the card color while retaining product edges and shadows. */
+.content .grid:not(.list-layout) .product-card-image img:is([src*="d4347dc930a3b1"],[src*="5a7061b6e04ff0"],[src*="5dea9b5e8078a8"],[src*="1287bef8f2d981"]){filter:brightness(1.16) contrast(1.15);mix-blend-mode:multiply}
+.content .grid:not(.list-layout) .product-card-image img:is([src*="0c6e69b4de65c1"],[src*="5587dbab5157e2"],[src*="ed6a22f525d1db"],[src*="4aa7c779686edd"],[src*="8974ff6d28f0c4"],[src*="a6f07aeb08b69b"],[src*="660e11e483b16a"]){filter:none;mix-blend-mode:multiply;-webkit-mask-image:linear-gradient(to right,transparent 0%,#000 23%,#000 77%,transparent 100%),linear-gradient(to bottom,transparent 0%,#000 23%,#000 77%,transparent 100%);mask-image:linear-gradient(to right,transparent 0%,#000 23%,#000 77%,transparent 100%),linear-gradient(to bottom,transparent 0%,#000 23%,#000 77%,transparent 100%);-webkit-mask-composite:source-in;mask-composite:intersect}
+.content .grid:not(.list-layout) .product-card-image img:is([src*="ed6a22f525d1db"],[src*="4aa7c779686edd"],[src*="8974ff6d28f0c4"],[src*="660e11e483b16a"]){-webkit-mask-image:linear-gradient(to right,transparent 0%,#000 30%,#000 70%,transparent 100%),linear-gradient(to bottom,transparent 0%,#000 30%,#000 70%,transparent 100%);mask-image:linear-gradient(to right,transparent 0%,#000 30%,#000 70%,transparent 100%),linear-gradient(to bottom,transparent 0%,#000 30%,#000 70%,transparent 100%)}
+.content .grid:not(.list-layout) .product-card-image img:is([src*="5dea9b5e8078a8"],[src*="1287bef8f2d981"]){-webkit-mask-image:linear-gradient(to right,transparent,#000 15%,#000 85%,transparent),linear-gradient(to bottom,transparent,#000 15%,#000 85%,transparent);mask-image:linear-gradient(to right,transparent,#000 15%,#000 85%,transparent),linear-gradient(to bottom,transparent,#000 15%,#000 85%,transparent);-webkit-mask-composite:source-in;mask-composite:intersect}
+
+/* Keep the photographed packaging intact while softly removing the hard studio-photo rectangle. */
+.product-card-image img:is([src*="e3770cdbda4201"],[src*="77befefc333655"],[src*="4ec84f7b00096d"],[src*="69bb603ca3e97e"],[src*="a7646e6cf6eb64"],[src*="87325093c55009"],[src*="ec31cb4edcc7e2"],[src*="482c2b5e5d9a97"],[src*="46d0ae4bd34ee1"]),
+.product-photo img:is([src*="e3770cdbda4201"],[src*="77befefc333655"],[src*="4ec84f7b00096d"],[src*="69bb603ca3e97e"],[src*="a7646e6cf6eb64"],[src*="87325093c55009"],[src*="ec31cb4edcc7e2"],[src*="482c2b5e5d9a97"],[src*="46d0ae4bd34ee1"]){
+  -webkit-mask-image:linear-gradient(to right,transparent 0%,#000 18%,#000 82%,transparent 100%),linear-gradient(to bottom,transparent 0%,#000 18%,#000 82%,transparent 100%);
+  mask-image:linear-gradient(to right,transparent 0%,#000 18%,#000 82%,transparent 100%),linear-gradient(to bottom,transparent 0%,#000 18%,#000 82%,transparent 100%);
+  -webkit-mask-composite:source-in;
+  mask-composite:intersect;
+}
+.product-card-image img[src*="e3770cdbda4201"],.product-photo img[src*="e3770cdbda4201"]{
+  -webkit-mask-image:radial-gradient(ellipse 78% 76% at 50% 52%,#000 64%,transparent 100%);
+  mask-image:radial-gradient(ellipse 78% 76% at 50% 52%,#000 64%,transparent 100%);
+}
+.product-card-image img:is([src*="77befefc333655"],[src*="4ec84f7b00096d"]),
+.product-photo img:is([src*="77befefc333655"],[src*="4ec84f7b00096d"]){
+  -webkit-mask-image:linear-gradient(to right,transparent,#000 9%,#000 91%,transparent),linear-gradient(to bottom,transparent,#000 9%,#000 91%,transparent);
+  mask-image:linear-gradient(to right,transparent,#000 9%,#000 91%,transparent),linear-gradient(to bottom,transparent,#000 9%,#000 91%,transparent);
+}
+/* Updated eraser photography, November 2026. */
+.product-card-image img:is([src*="a32620abcd895f"],[src*="26a0d4ffb75559"],[src*="a3962b300c3033"],[src*="2e56c5083a8310"],[src*="f06ff55cd93cb5"],[src*="349edfa9e13e5d"],[src*="91f44d0ddca01b"],[src*="56ab8da6835f31"]),
+.product-photo img:is([src*="a32620abcd895f"],[src*="26a0d4ffb75559"],[src*="a3962b300c3033"],[src*="2e56c5083a8310"],[src*="f06ff55cd93cb5"],[src*="349edfa9e13e5d"],[src*="91f44d0ddca01b"],[src*="56ab8da6835f31"]){
+  -webkit-mask-image:linear-gradient(to right,transparent,#000 14%,#000 86%,transparent),linear-gradient(to bottom,transparent,#000 14%,#000 86%,transparent);
+  mask-image:linear-gradient(to right,transparent,#000 14%,#000 86%,transparent),linear-gradient(to bottom,transparent,#000 14%,#000 86%,transparent);
+  -webkit-mask-composite:source-in;
+  mask-composite:intersect;
+}
+.product-card-image img[src*="a32620abcd895f"],.product-photo img[src*="a32620abcd895f"]{
+  -webkit-mask-image:radial-gradient(ellipse 78% 76% at 50% 52%,#000 64%,transparent 100%);
+  mask-image:radial-gradient(ellipse 78% 76% at 50% 52%,#000 64%,transparent 100%);
+}
+.product-card-image img[src*="a3962b300c3033"],.product-photo img[src*="a3962b300c3033"]{
+  -webkit-mask-image:linear-gradient(to right,transparent,#000 7%,#000 93%,transparent),linear-gradient(to bottom,transparent,#000 7%,#000 93%,transparent);
+  mask-image:linear-gradient(to right,transparent,#000 7%,#000 93%,transparent),linear-gradient(to bottom,transparent,#000 7%,#000 93%,transparent);
+}
+.culture-principles{columns:2;column-gap:52px;margin:24px 0 36px;padding-left:1.6em;color:#536178}
+.culture-principles li{break-inside:avoid;padding:0 10px 12px 4px;line-height:1.8}
+.culture-principles li::marker{color:var(--blue);font-weight:600}
+@media(max-width:700px){.culture-principles{columns:1}}
+
+/* Taller photographic banners for the three company sections. */
+#main .page-banner:is(.banner-cooperation,.banner-about,.banner-contact){
+  min-height:360px;
+  padding:72px 0;
+  display:flex;
+  align-items:center;
+}
+@media(max-width:700px){
+  #main .page-banner:is(.banner-cooperation,.banner-about,.banner-contact){
+    min-height:280px;
+    padding:48px 0;
+  }
+}
+
+/* Certificate display treatment. */
+.certificate-card img{filter:blur(0.7px)}
+
+/* Product category header artwork. */
+#main .page-banner.product-category-banner{min-height:clamp(210px,18vw,290px);display:flex;align-items:center;background-image:linear-gradient(90deg,rgba(255,255,255,.96) 0%,rgba(255,255,255,.80) 30%,rgba(255,255,255,.08) 70%),url('assets/banner-products-pencil.jpg');background-size:cover;background-position:center 55%}
+@media(max-width:700px){#main .page-banner.product-category-banner{min-height:200px;background-position:58% center}}
+
+/* Klein blue product actions and softened About Us backdrop. */
+.content .grid:not(.list-layout) .product-card-cta{background:var(--blue);color:#fff}
+#main .page-banner.banner-about{position:relative;isolation:isolate;overflow:hidden;background:#f3f6fb}
+#main .page-banner.banner-about::before{content:"";position:absolute;inset:-7px;z-index:-1;background-image:linear-gradient(90deg,rgba(243,246,251,.94) 0%,rgba(243,246,251,.70) 42%,rgba(243,246,251,.22) 100%),url('assets/banner-about-workshop.png');background-size:cover;background-position:center 55%;filter:blur(0.8px);pointer-events:none}
+#main .page-banner.banner-about>.wrap{position:relative;z-index:1}
+/* Contact page art supplies backdrop. */
+#main .page-banner.banner-contact{background-image:linear-gradient(90deg,rgba(243,246,251,.88) 0%,rgba(243,246,251,.50) 36%,rgba(243,246,251,.05) 75%),url('assets/banner-contact-art-01554c1f4bb7.jpg');background-size:cover;background-position:center}
+/* Keep the banner text crisp while matching the About Us background softness. */
+#main .page-banner.product-category-banner{position:relative;isolation:isolate;overflow:hidden;background-image:none;background-color:#f3f6fb}
+#main .page-banner.product-category-banner::before{content:"";position:absolute;inset:-7px;z-index:-1;pointer-events:none;background-image:linear-gradient(90deg,rgba(255,255,255,.96) 0%,rgba(255,255,255,.80) 30%,rgba(255,255,255,.08) 70%),url('assets/banner-products-pencil.jpg');background-size:cover;background-position:center 55%;filter:blur(0.8px)}
+#main .page-banner.product-category-banner>.wrap{position:relative;z-index:1}
+#main .page-banner.banner-cooperation{position:relative;isolation:isolate;overflow:hidden;background-image:none;background-color:#f3f6fb}
+#main .page-banner.banner-cooperation::before{content:"";position:absolute;inset:-7px;z-index:-1;pointer-events:none;background-image:linear-gradient(90deg,rgba(243,246,251,.96) 0%,rgba(243,246,251,.84) 42%,rgba(243,246,251,.36) 100%),url('assets/banner-cooperation.jpg');background-size:cover;background-position:center 53%;filter:blur(0.8px)}
+#main .page-banner.banner-cooperation>.wrap{position:relative;z-index:1}
+#main .page-banner.banner-contact{position:relative;isolation:isolate;overflow:hidden;background-image:none;background-color:#f3f6fb}
+#main .page-banner.banner-contact::before{content:"";position:absolute;inset:-7px;z-index:-1;pointer-events:none;background-image:linear-gradient(90deg,rgba(243,246,251,.88) 0%,rgba(243,246,251,.50) 36%,rgba(243,246,251,.05) 75%),url('assets/banner-contact-art-01554c1f4bb7.jpg');background-size:cover;background-position:center;filter:blur(0.8px)}
+#main .page-banner.banner-contact>.wrap{position:relative;z-index:1}
+
+
+/* Feather only the photo borders of the requested eight eraser cards. */
+.content .grid:not(.list-layout) .card:has(a:is([href="#product/product-9907a9e10388"],[href="#product/product-8e99e337acd4"],[href="#product/product-3ead283804d8"],[href="#product/product-929bf41c5821"],[href="#product/product-22c20bc49129"],[href="#product/product-0d95151f5818"],[href="#product/product-197a431c2845"],[href="#product/product-36afd9f52502"])) .product-card-image img{width:auto;height:auto;max-width:100%;max-height:100%;flex:none;filter:none;mix-blend-mode:multiply;-webkit-mask-image:linear-gradient(to right,transparent,#000 10%,#000 90%,transparent),linear-gradient(to bottom,transparent,#000 12%,#000 88%,transparent);mask-image:linear-gradient(to right,transparent,#000 10%,#000 90%,transparent),linear-gradient(to bottom,transparent,#000 12%,#000 88%,transparent);-webkit-mask-composite:source-in;mask-composite:intersect}
+
+/* Manufacturing photo grid. */
+.manufacturing-gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;width:min(960px,calc(100vw - 64px));margin:30px 0 38px 50%;transform:translateX(-50%)}
+.manufacturing-gallery .factory-photo-detail{margin:0;min-width:0;overflow:hidden;background:#f3f6fb}
+.manufacturing-gallery .factory-photo-detail img{display:block;width:100%;height:auto;aspect-ratio:4/3;object-fit:cover}
+@media(max-width:800px){.manufacturing-gallery{grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;width:100%;margin-left:0;transform:none}}
+@media(max-width:500px){.manufacturing-gallery{grid-template-columns:1fr}}
+
+/* Blue, white and lime brand palette. */
+:root{--blue:#022fdd;--accent:#f9db00}
+::selection{background:var(--accent);color:var(--blue)}
+header .nav a.active{border-color:var(--accent)}
+.feature-cta,.hero-bottom>.btn{background:var(--accent);border-color:var(--accent);color:var(--blue)}
+.feature-cta:hover,.feature-cta:focus-visible,.hero-bottom>.btn:hover{background:var(--blue);border-color:var(--blue);color:#fff}
+.hero-stage.has-product-feature{border-bottom:5px solid var(--accent)}
+.feature-dots button.active{background:var(--accent)}
+.section-head h2::after,.about-home .copy h2::after{content:"";display:block;width:48px;height:5px;background:var(--accent);margin-top:16px}
+.tabs a.active,.category-link.active{border-bottom-color:var(--accent)}
+.category-link.active::after{background:var(--accent)}
+.content .grid:not(.list-layout) .product-card-cta:hover{background:var(--accent);color:var(--blue)}
+.card:hover .pill{background:var(--accent);border-color:var(--accent);color:var(--blue)}
+.btn.outline:hover,.btn.outline:focus-visible{background:var(--accent);border-color:var(--accent);color:var(--blue)}
+.contact-card{border-top:4px solid var(--accent)}
+.contact-card .contact-icon{color:var(--accent)}
+.footer-grid h3::after{content:"";display:block;width:30px;height:3px;background:var(--accent);margin-top:12px}
+.footer-grid>div:first-child h3::after{margin-left:auto;margin-right:auto}
+.footer-grid a:hover{color:var(--accent)}
+.top:hover{background:var(--accent);border-color:var(--accent);color:var(--blue)}
+button:focus-visible,a:focus-visible{outline-color:var(--accent)}
+
+header .brand-logo{mix-blend-mode:lighten}
+
+/* Klein blue with warm yellow and cream accents. */
+:root{--blue:#022fdd;--accent:#f9db00;--gold:#fab600;--cream:#fff2a5}
+header .brand-logo{mix-blend-mode:normal;object-fit:contain}
+.content .grid:not(.list-layout) .product-card-brand{background:transparent;padding:0}
+.hero-bottom{background:var(--pale)}
+.hero:has(.hero-bottom){background:var(--pale)}
+.hero-bottom>.btn{background:var(--gold);border-color:var(--gold)}
+.feature-cta{background:var(--gold);border-color:var(--gold)}
+.section-head h2::after,.about-home .copy h2::after{background:var(--gold)}
+.tabs a.active,.category-link.active{background:#fffbe5}
+.contact-card{border-top-color:var(--gold)}
+
+.content .grid:not(.list-layout) .product-card-brand{background:var(--blue);padding:4px 7px}
+/* Homepage button states and slogan refinement. */
+.feature-cta,.hero-bottom>.btn{background:var(--blue);border-color:var(--blue);color:#fff;transition:background .2s ease,border-color .2s ease,color .2s ease,transform .2s ease}
+.feature-cta:hover,.feature-cta:focus-visible,.hero-bottom>.btn:hover,.hero-bottom>.btn:focus-visible{background:var(--gold);border-color:var(--gold);color:var(--blue)}
+.hero-bottom .slogan-zh{font-synthesis:none;-webkit-text-stroke:.3px currentColor;font-weight:700}
+.hero-bottom .home-slogan-en{letter-spacing:.035em!important}
+/* Refine spacing within the paired homepage slogans. */
+.hero-bottom .slogan-zh{letter-spacing:.035em}
+.hero-bottom .home-slogan-en{letter-spacing:.04em!important;word-spacing:.08em}
+/* Slightly increase the homepage Chinese slogan emphasis. */
+.hero-bottom .slogan-zh{font-size:clamp(32px,2.95vw,48px);font-weight:700;-webkit-text-stroke:.45px currentColor}
+@media(max-width:700px){.hero-bottom .slogan-zh{font-size:clamp(25px,5.45vw,35px)}}
+/* Give section tabs more breathing room and keep the email icon white. */
+.tabs .tabs-inner{gap:14px}
+.tabs a{padding-left:24px;padding-right:24px;text-align:center;flex-shrink:0}
+.contact-card .contact-icon{color:#fff}
+@media(max-width:560px){.tabs .tabs-inner{gap:6px}.tabs a{padding-left:17px;padding-right:17px}}
+/* Make the primary navigation selection bar fuller. */
+header .nav>a,header .nav-group>a{border-bottom-width:6px}
+header .nav>a.active,header .nav-group>a.active{border-bottom-color:var(--gold)}
+/* Extend the top-level selection bar without shifting navigation labels. */
+header .nav>a.active,header .nav-group>a.active{position:relative;border-bottom-color:transparent}
+header .nav>a.active::after,header .nav-group>a.active::after{content:"";position:absolute;left:-10px;right:-10px;bottom:-6px;height:6px;background:var(--gold);pointer-events:none}
+/* Match the active bar to its navigation tile, with rounded top corners. */
+header .nav>a.active::after,header .nav-group>a.active::after{left:0;right:0;border-radius:4px 4px 0 0}
+header .nav-group>a.active::after{content:none}
+header .nav-group:has(>a.active)::after{content:"";position:absolute;left:0;right:0;bottom:0;height:6px;background:var(--gold);border-radius:4px 4px 0 0;pointer-events:none}
+
+.contact-card .contact-icon-img,.contact-card:nth-child(2) .contact-icon-img,.contact-card:nth-child(4) .contact-icon-img{width:32px;height:32px;transform:none;filter:none;margin-bottom:16px}
+
+.contact-card{justify-content:flex-start}
+
+.hero-bottom .slogan-pair:first-child .home-slogan-en{letter-spacing:.085em!important}
